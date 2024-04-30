@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="static/css/style.css" rel="stylesheet">
+{% if "инженер" in prof or "строитель" in prof%}
+<h2> О нас: </h2>
+<img src="/static/img/logo.jpg" width="480" height="272">
+<p>
+    Вам тяжело? У вас тяжёлый период жизни, а рядом никого нет? Вам нужна поддержка, но никто не может её вам дать? <br>
+    Мы вам поможем! Наш сайт и бот сделан именно для таких людей как Вы! Безвозмездно вы можете создать аккаунт <br>
+    и получать поддержку в то время, которое удобно вам!
+</p>
+{% else %}
+<h2> Научные симуляторы </h2>
+<img src="/static/img/science.png">
+{% endif %}
+{% endblock %}
